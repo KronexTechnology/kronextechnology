@@ -1,4 +1,7 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +15,8 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
 
   <!-- All CSS files -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -105,8 +109,10 @@
     <div class="header__inner">
       <div class="header__logo">
         <a href="index.html">
-          <img class="logo-primary" src="images/kronexlogo_side (2).png" alt="Site Logo" style="height: 120px; width: auto;">
-          <img class="logo-secondary" src="images/kronexlogo_white.png" alt="Moibile Logo" style="height: auto; width: 170px;">
+          <img class="logo-primary" src="images/kronexlogo_side (2).png" alt="Site Logo"
+            style="height: 120px; width: auto;">
+          <img class="logo-secondary" src="images/kronexlogo_white.png" alt="Moibile Logo"
+            style="height: auto; width: 170px;">
         </a>
       </div>
       <div class="header__nav-icon">
@@ -125,7 +131,8 @@
     <div class="offcanvas__body">
       <div class="offcanvas__left">
         <div class="offcanvas__logo">
-          <a href="index.html"><img src="images/kronexlogo.png" style="height: auto; width: 170px;" alt="Offcanvas Logo"></a>
+          <a href="index.html"><img src="images/kronexlogo.png" style="height: auto; width: 170px;"
+              alt="Offcanvas Logo"></a>
         </div>
         <div class="offcanvas__social">
           <h3 class="social-title">Follow Us</h3>
@@ -205,7 +212,7 @@
               <li><a>blog</a>
                 <ul>
                   <li><a href="blog.html">blog</a></li>
-                  
+
                   <li><a href="blog-details.html">blog details</a></li>
                 </ul>
               </li>
@@ -253,7 +260,7 @@
             <div class="row">
               <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
                 <div class="sec-title-wrapper">
-                  <h2 class="sec-title-2 animation__char_come">Let’s get in touch</h2>
+                  <h2 class="sec-title-2 animation__char_come">Let's get in touch</h2>
                 </div>
               </div>
               <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -268,44 +275,50 @@
                 <div class="contact__info">
                   <h3 class="sub-title-anim-top animation__word_come">Don't be afraid man ! <br>say hello</h3>
                   <ul>
-                    <li><a href="tel:+(2)578365379">+(2) 578 - 365 - 379</a></li>
-                    <li><a href="mailto:hello@example.com">hello@example.com</a></li>
-                    <li><span>230 Norman Street New York, <br> QC (USA) H8R 1A1</span></li>
+                    <li><a href="tel:+(2)578365379">+91 9978539762</a></li>
+                    <li><a href="mailto:kronextechnology@gmail.com">kronextechnology@gmail.com</a></li>
+                    <li><span>Ahmedabad, <br> Gujarat-380001</span></li>
                   </ul>
                 </div>
               </div>
               <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7">
                 <div class="contact__form">
-                  <form action="assets/mail.php" method="POST">
+
+
+                  <!-- -----------// CONTACT FORM //----------- -->
+                  <form onsubmit="sendEmail(); return false;">
                     <div class="row g-3">
                       <div class="col-xxl-6 col-xl-6 col-12">
-                        <input type="text" name="name" placeholder="Name *">
+                        <input type="text" name="full-name" id="full-name" placeholder="Name *">
                       </div>
                       <div class="col-xxl-6 col-xl-6 col-12">
-                        <input type="email" name="email" placeholder="Email *">
+                        <input type="email" name="email" id="email" placeholder="Email *">
                       </div>
                     </div>
                     <div class="row g-3">
                       <div class="col-xxl-6 col-xl-6 col-12">
-                        <input type="tel" name="phone" placeholder="Phone">
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="Phone">
                       </div>
                       <div class="col-xxl-6 col-xl-6 col-12">
-                        <input type="text" name="subject" placeholder="Subject *">
+                        <input type="text" name="subject" id="subject" placeholder="Subject *">
                       </div>
                     </div>
                     <div class="row g-3">
                       <div class="col-12">
-                        <textarea name="message" placeholder="Messages *"></textarea>
+                        <textarea name="message" id="message" placeholder="Messages *"></textarea>
                       </div>
                     </div>
                     <div class="row g-3">
                       <div class="col-12">
                         <div class="btn_wrapper">
-                          <button class="wc-btn-primary btn-hover btn-item"><span></span> Send <br>Messages <i class="fa-solid fa-arrow-right"></i></button>
+                          <button type="submit" id="submit-form" class="wc-btn-primary btn-hover btn-item"><span></span>
+                            Send <br>Messages <i class="fa-solid fa-arrow-right"></i></button>
                         </div>
                       </div>
                     </div>
                   </form>
+
+
                 </div>
               </div>
             </div>
@@ -329,7 +342,8 @@
               <div class="col-xxl-12">
                 <div class="footer__inner">
                   <div class="footer__widget">
-                    <img class="footer__logo logo-dark" src="images/kronexlogo.png" alt="Footer Logo" style="width: 170px; height: auto;">
+                    <img class="footer__logo logo-dark" src="images/kronexlogo.png" alt="Footer Logo"
+                      style="width: 170px; height: auto;">
                     <p>When do they work well, and when do they on us and finally, when do we actually need how can we
                       avoid
                       them.</p>
@@ -363,7 +377,8 @@
                   <div class="footer__widget-4">
                     <h2 class="project-title">Have a project in your mind?</h2>
                     <div class="btn_wrapper">
-                      <a href="contact.html" class="wc-btn-primary btn-hover btn-item"><span></span> contact us <i class="fa-solid fa-arrow-right"></i></a>
+                      <a href="contact.html" class="wc-btn-primary btn-hover btn-item"><span></span> contact us <i
+                          class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <!-- <h3 class="contact-time">09 : 00 AM - 10 : 30 PM</h3>
                     <h4 class="contact-day">Saturday - Thursday</h4> -->
@@ -412,4 +427,12 @@
 
 
 
-</body></html>
+  <script src="js/email.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+
+
+
+</body>
+
+</html>
