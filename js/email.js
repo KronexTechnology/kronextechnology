@@ -34,7 +34,7 @@ function sendEmail() {
         return;
     }
     if (!subject) {
-        alert('Please select a subject.');
+        alert('Please enter a subject.');
         return;
     }
     if (message.length > 1000) {
