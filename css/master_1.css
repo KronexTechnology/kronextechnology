@@ -14869,6 +14869,7 @@ img {
 @media only screen and (max-width: 767px) {
   .blog__detail-thumb {
     padding-bottom: 40px;
+    
   }
 }
 .blog__detail-thumb img {

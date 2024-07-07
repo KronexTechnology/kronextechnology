@@ -1,0 +1,26 @@
+/* .custome_blog__detail-thumb {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%;
+} */
+
+/* @media (max-width: 600px) {
+    .custome_blog__detail-thumb {
+        width: 100%;
+        max-width: 100%;
+    }
+} */
+
+/* @media (min-width: 601px) and (max-width: 1024px) {
+    .custome_blog__detail-thumb {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .custome_blog__detail-thumb {
+        width: 100%;
+        max-width: 100%;
+    }
+} */
