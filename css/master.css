@@ -15118,8 +15118,8 @@ img {
   left: 0;
   width: auto;
   height: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  /* -webkit-transition: 0.5s;
+  transition: 0.5s; */
   background-size: cover;
 }
 @media (max-width: 1023px) {
@@ -15142,11 +15142,11 @@ img {
   }
 }
 .img-box:hover img:nth-child(2) {
-  -webkit-transform: translatex(-50%) scalex(2);
+  /* -webkit-transform: translatex(-50%) scalex(2);
           transform: translatex(-50%) scalex(2);
   opacity: 0;
   -webkit-filter: blur(10px);
-          filter: blur(10px);
+          filter: blur(10px); */
 }
 @media (max-width: 1023px) {
   .img-box:hover img:nth-child(2) {
