@@ -12,7 +12,7 @@ const insertData = async () => {
         showAlert("Thank you! Your inquiry has been successfully submitted.");
         
         try {
-            const response = await fetch("http://localhost:3000/email", {
+            const response = await fetch("https://kronex-backend.vercel.app/email", {
                 method: "POST",
                 body: JSON.stringify({ email }),
                 headers: {
