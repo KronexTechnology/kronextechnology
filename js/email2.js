@@ -11,10 +11,29 @@ const insertData = async () => {
   } else {
     showAlert("Thank you! Your inquiry has been successfully submitted.");
 
+    const monthName = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    const date = new Date();
+    const day = date.getDate();
+    const month = monthName[date.getMonth()];
+    const year = date.getFullYear();
+
     try {
       const response = await fetch("https://kronex-backend.vercel.app/email", {
         method: "POST",
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, day, month, year }),
         headers: {
           "Content-Type": "application/json; charset=utf-8",
         },
@@ -31,22 +50,19 @@ const insertData = async () => {
     }
   }
 
-
   // Automatically hide the alert message after 3 seconds (3000 milliseconds)
   setTimeout(function () {
     alertMessage.textContent = "";
   }, 3000);
 
+  // Automatically hide the alert message after 3 seconds (3000 milliseconds)
+  setTimeout(function () {
+    alertMessage.textContent = "";
+  }, 2000);
 
-
-    // Automatically hide the alert message after 3 seconds (3000 milliseconds)
-    setTimeout(function() {
-      alertMessage.textContent = '';
-    }, 2000);
-
-    // Clear the input field
-    document.getElementById('email').value = '';
-    document.getElementById('check_box').checked = false;
+  // Clear the input field
+  document.getElementById("email").value = "";
+  document.getElementById("check_box").checked = false;
 };
 
 const showAlert = (message) => {
